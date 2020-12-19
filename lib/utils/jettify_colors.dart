@@ -13,6 +13,10 @@ class JetiffyColor {
     return ColorUtils.hexToInt('#4B545A');
   }
 
+  static fadedText() {
+    return ColorUtils.hexToInt('#8D8C8C');
+  }
+
   static danger() {
     return ColorUtils.hexToInt('#E3000B');
   }

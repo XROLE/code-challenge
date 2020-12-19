@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:jetiffy/screens.dart/input_receivers_info.dart';
+import 'package:jetiffy/screens.dart/preview_screen.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,19 +16,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: MyHomePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => InputReceiversInfoScreen(),
+        '/preview': (context) => PreviewScreen(),
+      }
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return InputReceiversInfoScreen();
-  }
-}

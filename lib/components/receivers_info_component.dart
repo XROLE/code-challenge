@@ -22,7 +22,7 @@ Container receiversInfoComponent() {
               ),
               child: Container(
                 margin: EdgeInsets.only(bottom: 15),
-                child: Icon(Icons.minimize, color: Colors.white),
+                child: Icon(Icons.horizontal_rule, color: Colors.white),
               ),
             )
           ],
