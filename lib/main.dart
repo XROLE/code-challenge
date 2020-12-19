@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jetiffy/screens.dart/input_receivers_info.dart';
+import 'package:jetiffy/screens.dart/order_confirmation.dart';
 import 'package:jetiffy/screens.dart/preview_screen.dart';
 
 void main() {
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => InputReceiversInfoScreen(),
         '/preview': (context) => PreviewScreen(),
+        '/order-confirmation': (context) => OrderConfirmationScreen(),
       }
     );
   }
