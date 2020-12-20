@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
-Row jettifyAppBar(String title, BuildContext context) {
+Row jettifyAppBar(String title, BuildContext context,
+    [bool showDrawer = false]) {
   return Row(children: [
     IconButton(
-      icon: Icon(Icons.keyboard_arrow_left),
-      onPressed: () {
-        Navigator.pop(context);
-      },
+      icon: Icon(showDrawer ? Icons.sort : Icons.keyboard_arrow_left),
+      onPressed: showDrawer
+          ? () {
+              Navigator.pushNamed(context, '/input-receiver-info');
+            }
+          : () {
+              Navigator.pop(context);
+            },
       color: Colors.black.withOpacity(0.55),
       iconSize: 30,
     ),

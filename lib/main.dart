@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jetiffy/screens.dart/home_screen.dart';
 import 'package:jetiffy/screens.dart/input_receivers_info.dart';
 import 'package:jetiffy/screens.dart/preview_screen.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => InputReceiversInfoScreen(),
+        '/': (context) => HomeScreen(),
+        '/input-receiver-info': (context) => InputReceiversInfoScreen(),
         '/preview': (context) => PreviewScreen(),
       }
     );
