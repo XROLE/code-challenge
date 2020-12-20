@@ -47,11 +47,17 @@ class _PreviewScreenState extends State<PreviewScreen> {
                               margin: EdgeInsets.only(bottom: 15),
                               child: Icon(Icons.add,
                                   color: Colors.white, size: 40),
-                                
                             ),
                           ),
-                          Container(
-                              width: 300, child: jetiffyButton('Place Order')),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/order-confirmation');
+                            },
+                            child: Container(
+                                width: 300,
+                                child: jetiffyButton('Place Order')),
+                          ),
                         ]),
                   ],
                 ),

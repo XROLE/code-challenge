@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jetiffy/screens.dart/home_screen.dart';
 import 'package:jetiffy/screens.dart/input_receivers_info.dart';
+import 'package:jetiffy/screens.dart/order_confirmation.dart';
 import 'package:jetiffy/screens.dart/preview_screen.dart';
 
 void main() {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomeScreen(),
         '/input-receiver-info': (context) => InputReceiversInfoScreen(),
         '/preview': (context) => PreviewScreen(),
+        '/order-confirmation': (context) => OrderConfirmationScreen(),
       }
     );
   }
