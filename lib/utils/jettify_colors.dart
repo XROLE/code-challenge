@@ -17,6 +17,10 @@ class JetiffyColor {
     return ColorUtils.hexToInt('#8D8C8C');
   }
 
+  static darkGrey() {
+    return ColorUtils.hexToInt('#D5DDE0');
+  }
+
   static danger() {
     return ColorUtils.hexToInt('#E3000B');
   }
